@@ -25,29 +25,25 @@
     .grid-container{
 
         display: grid;
-        height: 100px;
-        margin: auto;
-        gap: 10px;
-        grid-template-columns: auto;
+        grid-template-rows:  1fr auto auto 1fr;
         grid-template-areas: "header"
-                             "section"
+                              "section"
                               "nav"
-                             "footer";
+                              "footer";
         
     }
         
     .header{
         grid-area: header;
         
+         }
+     
         
-          
-     }
-     .section{
+    .section{
         grid-area: section;
-        text-align: center;
-        
-       
- }
+        text-align: left;
+
+       }
     .nav{
         grid-area: nav;
         align-content: center; 
@@ -57,14 +53,56 @@
     .footer{ 
         grid-area: footer;
         text-align: right;
-        text-size-adjust: 2rem;
-        
+         }
+    /*areasespectaculos*/
+    
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto auto 1fr;
+        grid-template-areas: "encabezado"
+                              "central"
+                              "contenido"
+                              "footer";
     }
-    /*areas espectaculos*/
     
+.encabezado{
+    grid-area: encabezado;
+    background-color: black;
+}
+.main{
+    grid-area: central;
+    width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;
+    display: flexbox; 
+    background-color: darkred;   
+}
+
+.aside{
+    grid-area: contenido;
+    width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;
+      background-color: darkorange;  
+}
+
+.footer{
+    grid-area: footer;
+    background-color:darkred ;
     
- /*clases*/    
+}
+
+
+    /*clases*/    
+  .carta{
+    display:block;
+    width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;
+        
     
+  }  
+    
+ .home{
+    background-image: url("../../img/wallpapiro.jpg");
+ }   
+
     .caja{
         background-position:center;
  }
@@ -150,15 +188,18 @@
         color:darkred
     }
     
-    
+    .item{
+        color: darkred;
+    }
     /*listas*/
     
     li{
         padding: 2rem;font-family:
         "alex brush";flex-direction:column; display: inline;
+        
     }
     a{
-        color: red;font-size:2rem;
+        color:goldenrod;font-size:2rem;
         text-decoration: none;
         
     }
