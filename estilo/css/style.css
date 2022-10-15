@@ -73,20 +73,18 @@
 }
 .main{
     grid-area: central;
-    width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;
-    display: flexbox; 
-    background-color: darkred;   
+    
+   
 }
 
 .aside{
     grid-area: contenido;
-    width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;
-      background-color: darkorange;  
+      
 }
 
 .footer{
     grid-area: footer;
-    background-color:darkred ;
+    
     
 }
 
