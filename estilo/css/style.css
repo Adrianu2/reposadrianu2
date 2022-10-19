@@ -1,209 +1,126 @@
  #{ margin: 0;
     padding: 0; } 
 
-  
-  h1{
-    text-align:center; margin-right: 100px;
-     color:darkgoldenrod;font-size: 5rem;font-family: "alex brush";
-    }
+ h1{
+ text-align:center; margin-right: 100px;
+ color:darkgoldenrod;font-size: 5rem;font-family: "alex brush"; }
  h2{
-     color:darkgoldenrod;font-size: 
-       4rem;font-family: "alex brush";
-    background-position:left;
-    }
-    h4{
-       margin-top: 00.2rem; font-size: 3rem;color: darkred; text-align: center;font-family: "alex brush";
-    }
-    h5{
-        font-size: 2rem;color: gray;
-    }
-    h6{
-        background-position:center; color:darkred;font-size: 4rem;font-family: "alex brush";
-    }
+ color:darkgoldenrod;font-size: 
+ 4rem;font-family: "alex brush";
+background-position:left; }
+h4{
+ margin-top: 00.2rem; font-size: 3rem;color: darkred; text-align: center;font-family: "alex brush";
+}
 
-    /*areasindex*/
-    .grid-container{
+ h5{font-size: 2rem;color: gray;}
 
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows:  1fr auto auto 1fr;
-        grid-template-areas: "header"
-                              "section"
-                              "nav"
-                              "footer";
-        
-    }
-        
-    .header{
-        grid-area: header;
-        
-         }
-     
-        
-    .section{
-        grid-area: section;
-        text-align: left;
+ h6{
+background-position:center; color:darkred;font-size: 4rem;
+font-family: "alex brush"; }
 
-       }
-    .nav{
-        grid-area: nav;
-        text-align: left;
-        
-        
-    } 
+/*areasindex*/
     
-
-    .footer{ 
-        
-        grid-area: footer;
-        text-align: right;
-         }
-    
+ .grid-container{
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows:  1fr auto auto 1fr;
+ grid-template-areas: "header"
+                      "section"
+                        "nav"
+                      "footer"; }
+ .header{ grid-area: header;}
+.section{ grid-area: section; text-align: left;}
+.nav{grid-area: nav;text-align: left;} 
+.footer{  grid-area: footer;text-align: right;}
+                
 /*clases*/  
 
+.fondo{background-color:black; }  
+.carta{
+ display:block;
+ width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;}  
+    
+.home{ background-image: url("../../img/wallpapiro.jpg");}   
 
-    .fondo{
-        background-color:black;
-    }  
-  .carta{
-    display:block;
-    width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;
-        
-    }  
+.caja{background-position:center;}
     
- .home{ background-image: url("../../img/wallpapiro.jpg");
+.registro{
+ background-image: url("../../img/fotocontacto.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ justify-content: center;}
     
- }   
+.header__list{
+margin-top: 0.2rem; color:black;display: block; font-size: 2rem;padding: 0.5rem;text-align: center; background-color: aquamarine;}
 
-    .caja{
-        background-position:center;
- }
+.form-register{
+display:inline-flex ;justify-content: space-between;align-items:center;
+width: 14rem; padding:0.5rem;
+ margin-top:0.7rem;border-radius: 0,2rem;background: darkred; color:white;
+flex-direction:column; border-color: black;}
     
-    .registro{
-        background-image: url("../../img/2412-flamencos.jpg");
-        background-size:cover;
-        background-repeat: no-repeat;
-        justify-content: center;
-     }
-    
-     .header__list{
-    
-       margin-top: 0.2rem; color:black;display: block; font-size: 2rem;padding: 0.5rem;text-align: center; background-color: aquamarine;
-    }
-    .form-register{
-        
-        display:inline-flex ;justify-content: space-between;align-items:center;
-        width: 14rem; padding:0.5rem;
-        margin-top:0.7rem;border-radius: 0,2rem;background: darkred; color:white;
-        flex-direction:column; border-color: black;
-    }
-    
-        
-    .controls{
-    
-        width: 100%;background: 24303;padding: 0.4rem;
-        border-radius: 0rem; margin-bottom: 1rem;
-        border: 1px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.25rem;
-    }
+.controls{
+ width: 100%;background: 24303;padding: 0.4rem;
+ border-radius: 0rem; margin-bottom: 1rem;
+ border: 1px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 1.25rem;}
     
     
-    .form-register .botons{
-    
-    
-        width: 100%;padding: 0.2em;;background:blue;
-        border:black;color:white;font-size: 1.5rem;
-    }
-    .form-register a :hover{
-        color: white; text-decoration: underline;
-    }
-    
-    .form-register a{
-    
-        color: white; text-decoration: none;
-    }
-    
-    .columna{
-        width: 50%; float:left; padding: 1rem 1rem ; box-sizing: border-box;
-          
-      }
-    
-   .gastronomia{
-        background-color: black; padding: 14px 20px;
-    }
-    .service{
-        background-color:black; padding: 14px 20px;
-    }
-    
- .mesa{
-    font-size: 2rem; color: darkslategray;
- }
-    .caja{
-        display:block; padding: 0.5rem;text-align:center;
-        font-family: Arial, Helvetica, sans-serif;font-size:1rem
-        ;margin: 2px;
-    }
-    .caja p{
-    color:darkred;background-color: gold;
-    }
-    .salto{
-        color:darkred;
-    }
-    
-    .item{
-        color: darkred;
-    }
-    .contenedor-grid{
-        display: grid;
-        grid-template-columns: 450px 500px 450px;
-        gap: 2rem;
-        margin: 3rem;
-        font-size: 1.5rem; color: white;
-        
-    }
-    
-        
-        
+.form-register .botons{
+    width: 100%;padding: 0.2em;;background:blue;
+    border:black;color:white;font-size: 1.5rem; }
 
-    .contenedor{
-        display: grid;
-        grid-template-columns: 350px 350px 330px 380px;
-        gap: 2.5rem;
-        
-    }
-    /*listas*/
+.form-register a :hover{
+color: white; text-decoration: underline; }
     
-    li{
-        padding: 2rem;font-family:
-        "alex brush";flex-direction: column; display: inline;
-        
-    }
-    a{
-        color:goldenrod;font-size:2rem;
-        text-decoration: none;
-        
-    }
+.form-register a{
+color: white; text-decoration: none; }
     
-    .tango{
-        font-size: 2rem; color: darkgoldenrod;
-    }
-    .rumba{ font-size: 1rem; color:white;}
+.columna{
+ width: 50%; float:left; padding: 1rem 1rem ; box-sizing: border-box;}
     
-    
-    li{
-        display: inline;
-    }
-     
-    .donde{
-        text-align: right; color: white; font-size: 2rem;
-        
-    }
-    
-    .platos{
-        display: flex;justify-content: center; 
-    }
-    .zapra{
-        background-color: black;
-    }
+.gastronomia{
+background-color: black; padding: 14px 20px;}
 
+.service{background-color:black; padding: 14px 20px;}
+    
+ .mesa{ font-size: 2rem; color: darkslategray;}
 
+ .caja{
+ display:block; padding: 0.5rem;text-align:center;
+font-family: Arial, Helvetica, sans-serif;font-size:1rem;margin: 2px;}
+
+.caja p{ color:darkred;background-color: gold;}
+.salto{ color:darkred; }
+.item{ color: darkred; }
+ .contenedor-grid{ display: grid;
+ grid-template-columns: 450px 500px 450px;gap: 2rem;margin: 3rem;
+font-size: 1.5rem; color: white;}
+.contenedor{display: grid;
+ grid-template-columns: 350px 350px 330px 380px;gap: 2.5rem; }
+ .farru{font-size: 1.5rem; color: darkgoldenrod;}   
+.tango{ font-size: 2rem; color: darkgoldenrod;}
+.rumba{ font-size: 1rem; color:white;}
+.donde{text-align: right; color: white; font-size: 1.5rem;}
+.platos{ display: flex;justify-content: center; }
+.zapra{background-color: black;}
+
+/*listas*/
+    
+ li{ padding: 2rem;font-family:
+ "alex brush";flex-direction: column; display: inline;}
+ a{color:goldenrod;font-size:2rem;
+ text-decoration: none; }
+ li{display: inline; }
+
+ /*media*/
+@media(max-widht:320px){
+    h1{ color:darkred}
+}
+
+@media(min-widht:768px){
+    h2{ color:white}
+}
+@media(min-widht:1024px){
+    h1{ color:blue}
+}
