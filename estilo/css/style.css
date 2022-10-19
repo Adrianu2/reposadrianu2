@@ -114,9 +114,8 @@ font-size: 1.5rem; color: white;}
  li{display: inline; }
 
  /*media*/
-@media(max-widht:320px){
-    h1{ color:darkred}
-}
+
+
 
 @media(min-widht:768px){
     h2{ color:white}
