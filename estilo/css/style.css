@@ -27,10 +27,14 @@ grid-template-rows:  1fr auto auto 1fr;
                       "section"
                         "nav"
                       "footer"; }
-.header{ grid-area: header;}
-.section{ grid-area: section; text-align: left;}
-.nav{grid-area: nav;text-align: left;} 
-.footer{  grid-area: footer;}
+.header{
+  grid-area: header;}
+.section{ 
+  grid-area: section; text-align: left;}
+.nav{
+  grid-area: nav;text-align: left;} 
+.footer{
+  grid-area: footer;}
                 
 /*clases*/  
 
@@ -41,56 +45,72 @@ grid-template-rows:  1fr auto auto 1fr;
 .home{ background-image: url("../../img/wallpapiro.jpg"); background-size: cover;
  background-repeat: no-repeat; 
 }   
-.toro{ text-align: right;
-     color: yellow; font-size: 2rem;} 
-.caja{background-position:center;}
+.toro{ 
+  text-align: right;
+  color: yellow; font-size: 2rem;} 
+
 .registro{
- background-image: url("../../img/fotocontacto.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- justify-content: center;}
+  background-image: url("../../img/fotocontacto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;}
 .header__list{
-margin-top: 0.2rem; color:black;display: block; font-size: 2rem;padding: 0.5rem;text-align: center; background-color: aquamarine;}
+  margin-top: 0.2rem; color:black;display: block; font-size: 2rem;padding: 0.5rem;text-align: center; background-color: aquamarine;}
 .form-register{
-display:inline-flex ;justify-content: space-between;align-items:center;
-width: 14rem; padding:0.5rem;
- margin-top:0.7rem;border-radius: 0,2rem;background: darkred; color:white;
-flex-direction:column; border-color: black;}
+  display:inline-flex ;justify-content: space-between;align-items:center;
+  width: 14rem; padding:0.5rem;
+  margin-top:0.7rem;border-radius: 0,2rem;background: darkred; color:white;
+  flex-direction:column; border-color: black;}
 .controls{
- width: 100%;background: 24303;padding: 0.4rem;
- border-radius: 0rem; margin-bottom: 1rem;
- border: 1px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-size: 1.25rem;}
+   width: 100%;background: 24303;padding: 0.4rem;
+   border-radius: 0rem; margin-bottom: 1rem;
+   border: 1px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 1.25rem;}
 .form-register .botons{
 width: 100%;padding: 0.2em;;background:blue;
  border:black;color:white;font-size: 1.5rem; }
 .form-register a :hover{
 color: white; text-decoration: underline; }
 .form-register a{
-color: white; text-decoration: none; }
+    color: white; text-decoration: none; }
 .columna{
- width: 50%; float:left; padding: 1rem 1rem ; box-sizing: border-box;}
+    width: 50%; float:left; padding: 1rem 1rem ; box-sizing: border-box;}
 .gastronomia{
-background-color: black; padding: 14px 20px;}
-.service{background-color:black; padding: 14px 20px;}
-.mesa{ font-size: 2rem; color: darkslategray;}
-.caja{
- display:block; padding: 0.5rem;text-align:center;
-font-family: Arial, Helvetica, sans-serif;font-size:1rem;margin: 2px;}
-.caja p{ color:yellow;font-size: 1.5rem; }
-.salto{ color:darkred; }
-.item{ color: darkred; font-size: 1.5rem;}
- .contenedor-grid{ display: grid;
- grid-template-columns: 380px 450px 350px; gap: 0.5rem;
-font-size: 1.5rem; color: white;}
-.contenedor{display: grid;
- grid-template-columns: 350px 350px 330px 380px;gap: 2.5rem; }
- .farru{font-size: 1.5rem; color: darkgoldenrod;}   
-.tango{ font-size: 2rem; color: darkgoldenrod;}
-.rumba{ font-size: 1rem; color:white;}
-.donde{text-align: right; color: white; font-size: 1.5rem;}
-.platos{ display: flex;justify-content: center; }
-.zapra{background-color: black;}
+    background-color: black; padding: 14px 20px;}
+.service{
+    background-color:black; padding: 14px 20px;}
+.mesa{ 
+    font-size: 2rem; color: darkslategray;}
+.caja{ width: 200px; height: 100px; background: red;
+    display:flex;margin: auto; text-align: center; background-position: right;
+font-family: Arial, Helvetica, sans-serif;font-size:1rem;}
+.caja p{ 
+  color:white; text-align: center;}
+.caja:hover{
+  transform: translate(50%); background: yellow;}
+  .salto{ 
+  color:darkred; }
+.item{ 
+  color: darkred; font-size: 1.5rem;}
+ .contenedor-grid{ 
+  display: grid;
+  grid-template-columns: 380px 450px 350px; gap: 0.5rem;
+  font-size: 1.5rem; color: white;}
+.contenedor{
+  display: grid;
+  grid-template-columns: 350px 350px 330px 380px;gap: 2.5rem; }
+ .farru{
+  font-size: 1.5rem; color: darkgoldenrod;}   
+.tango{ 
+  font-size: 2rem; color: darkgoldenrod;}
+.rumba{ 
+  font-size: 1rem; color:white;}
+.donde{
+  text-align: right; color: yellow; font-size: 1.5rem;}
+.platos{ 
+  display: flex;justify-content: center; }
+.zapra{
+  background-color: black;}
 
 /*listas*/
     
@@ -107,32 +127,41 @@ font-size: 1.5rem; color: white;}
 
 h1{color: red; text-align: center;}
 h2{ color: yellow; text-align: center; font-size: 2.5rem;}
-.tango{ color:white; text-align: left;}
-.home{background-position: center;background-size: auto;}
-.platos{display: table-row;}
-.item{font-size: 1.3rem; justify-items: center;}
-.toro{font-size: 1.3rem; justify-items: center;
+.tango{
+   color:white; text-align: left;}
+.home{
+  background-position: center;background-size: auto;}
+.platos{
+  display: table-row;}
+.item{
+  font-size: 1.3rem; justify-items: center;}
+.toro{
+  font-size: 1.3rem; justify-items: center;
 }
 }
  
 @media (min-width: 768px){
 
 h1{color: blue;text-align: center}
- h2{ color: blue;}
-.tango{color: white; text-align: center;}
-.home{background-position: center;background-size: 110rem;}
-.header{display: flex; text-align: center;}
-.item{color: yellow;}
+h2{ color: blue;}
+.tango{
+  color: white; text-align: center;}
+.home{
+  background-position: center;background-size: 110rem;}
+.header{
+  display: flex; text-align: center;}
+.item{
+  color: yellow;}
  }
 
 @media(min-width: 1024px){
 
 h1{color: red;}
 h2{ color: yellow;}
-.tango{color: white;}
-.item{font-size: 2rem;}
-
- 
+.tango{
+  color: white;}
+.item{
+  font-size: 2rem;}
 }
 
 
