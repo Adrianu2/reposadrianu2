@@ -1,19 +1,19 @@
- *{ margin: 0;
-    padding: 0; 
-    } 
-    
+#{ margin: 0;
+  padding: 0; 
+box-sizing: border-box;} 
+  
 
- h1{
- text-align:right; margin-right: 100px;
- color:darkgoldenrod;font-size: 5rem;font-family: "alex brush"; }
- h2{
- color:darkgoldenrod;font-size: 
- 4rem;font-family: "alex brush";
+h1{
+text-align:right; margin-right: 100px;
+color:darkgoldenrod;font-size: 5rem;font-family: "alex brush"; }
+h2{
+color:darkgoldenrod;font-size: 
+4rem;font-family: "alex brush";
 background-position:left; }
 h4{
- margin-top: 00.2rem; font-size: 3rem;color: darkred; text-align: center;font-family: "alex brush";
+margin-top: 00.2rem; font-size: 3rem;color: darkred; text-align: center;font-family: "alex brush";
 } h5{font-size: 2rem;color: gray;}
- h6{
+h6{
 background-position:center; color:darkred;font-size: 4rem;
 font-family: "alex brush";}
 
@@ -23,217 +23,217 @@ font-family: "alex brush";}
 display: grid;
 grid-template-columns: auto auto;
 grid-template-rows:  1fr auto auto 1fr;
- grid-template-areas: "header"
-                      "section"
-                        "nav"
-                      "footer"; }
+grid-template-areas: "header"
+                    "section"
+                      "nav"
+                    "footer"; }
 .header{
-  grid-area: header;}
+grid-area: header;}
 .section{ 
-  grid-area: section; text-align: left;}
+grid-area: section; text-align: left;}
 .nav{
-  grid-area: nav;text-align: left;} 
+grid-area: nav;text-align: left;} 
 .footer{
-  grid-area: footer;}
-                
+grid-area: footer;}
+              
 /*clases*/  
 
 .fondo{background-color:black; background-size: cover; }  
 .carta{
- display:block;
- width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;}  
-.home{ background-image:url("../../img/wallpapiro.jpg") ; background-size: contain;
- background-position: center;
+display:block;
+width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;}  
+.home{ background-image: url("../../img/wallpapiro.jpg"); background-size: cover;
+background-repeat: no-repeat; 
 }   
 .toro{ 
-  text-align: right;
-  color: yellow; font-size: 2rem;} 
+text-align: right;
+color: yellow; font-size: 2rem;} 
 
 .registro{
-  background-image: url("../../img/fotocontacto.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: center;}
+background-image: url("../../img/fotocontacto.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+justify-content: center;}
 .header__list{
-  margin-top: 0.2rem; color:black;display: block; font-size: 2rem;padding: 0.5rem;text-align: center; background-color: aquamarine;}
+margin-top: 0.2rem; color:black;display: block; font-size: 2rem;padding: 0.5rem;text-align: center; background-color: aquamarine;}
 .form-register{
-  display: inline-flex ;justify-content: space-between; align-items: center;
-  width: 14rem; padding: 0.2rem; box-sizing: border-box;
-  margin: 0.8rem; padding: 1rem; border-radius: 0.5rem; background: darkred; color:white;
-  flex-direction:column; border-color: black;}
+display:inline-flex ;justify-content: space-between;align-items:center;
+width: 14rem; padding:0.5rem;
+margin-top:0.7rem;border-radius: 0,2rem;background: darkred; color:white;
+flex-direction:column; border-color: black;}
 .controls{
-   width: 100%;background: 24303;padding: 0.4rem;
-   border-radius: 0rem; margin-bottom: 1rem;
-   border: 1px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-size: 1.25rem;}
+ width: 100%;background: 24303;padding: 0.4rem;
+ border-radius: 0rem; margin-bottom: 1rem;
+ border: 1px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 1.25rem;}
 .form-register .botons{
 width: 100%;padding: 0.2em;;background:blue;
- border:black;color:white;font-size: 1rem; }
+border:black;color:white;font-size: 1.5rem; }
 .form-register a :hover{
 color: white; text-decoration: underline; }
 .form-register a{
-    color: white; text-decoration: none; }
+  color: white; text-decoration: none; }
 .columna{
-    width: 50%; float:left; padding: 1rem 1rem ; box-sizing: border-box;}
+  width: 50%; float:left; padding: 1rem 1rem ; box-sizing: border-box;}
 .gastronomia{
-    background-color: black; padding: 14px 20px;}
+  background-color: black; padding: 14px 20px;}
 .service{
-    background-color:black; padding: 14px 20px;}
+  background-color:black; padding: 14px 20px;}
 .mesa{ 
-    font-size: 1rem; color: darkslategray; margin-left: 3rem;}
+  font-size: 2rem; color: darkslategray;}
 .caja{ width: 200px; height: 100px; background: red;
-    display:flex;margin: auto; text-align: center; background-position: right;
+  display:flex;margin: auto; text-align: center; background-position: right;
 font-family: Arial, Helvetica, sans-serif;font-size:1rem;}
 .caja p{ 
-  color:white; text-align: center;}
+color:white; text-align: center;}
 .caja:hover{
-  transform: translate(50%); background: yellow;}
-  .salto{ 
-  color:darkred; }
+transform: translate(50%); background: yellow;}
+.salto{ 
+color:darkred; }
 .item{ 
-  color: yellow; font-size: 1.5rem;}
- .contenedor-grid{ 
-  display: grid; grid-template-columns: 300px 300px 400px 300px;
-  gap: 1rem;
-}
+color: yellow; font-size: 1.5rem;}
+.contenedor-grid{ 
+display: grid;
+grid-template-columns: 350px 300px 350px 300px; gap: 1rem;
+font-size: 1rem; color: white;}
 .contenedor{
-  display: grid;
-  grid-template-columns: 350px 350px 330px 380px;gap: 2.5rem; }
- .farru{
-  font-size: 1.5rem; color: darkgoldenrod;}   
+display: grid; grid-template-columns: 200px 250px 200px 250px; gap: 4rem;}
+.farru{
+font-size: 1.5rem; color: darkgoldenrod;}   
 .tango{ 
-  font-size: 2rem; color: darkgoldenrod;}
+font-size: 2rem; color: darkgoldenrod;}
 .rumba{ 
-  font-size: 1rem; color:white;}
+font-size: 1rem; color:white;}
 .donde{
-  text-align: left; color: yellow; font-size: 2rem;}
+text-align: left; color: yellow; font-size: 2rem;}
 .platos{ 
-  display: flex;justify-content: center; }
+display: flex;justify-content: center; }
 .zapra{
-  background-color: black;}
-  .triana{
-    font-size: 1rem; color: white;
-  }
+background-color: black;}
+.tratra{
+  text-align: center;
+}
 
 
 /*listas*/
-    
- li{ padding: 2rem;font-family:
- "alex brush";flex-direction: column; display: inline;}
- a{color:goldenrod;font-size:2rem;
- text-decoration: none; }
- li{display: inline; }
+  
+li{ padding: 2rem;font-family:
+"alex brush";flex-direction: column; display: inline;}
+a{color:goldenrod;font-size:2rem;
+text-decoration: none; }
+li{display: inline; }
 
- /*media*/
+/*media*/
 
- @media (max-width: 320px){
+@media (max-width: 320px){
 
-   
-   h1{color:blue; text-align: center;}
-   h2{ color:blue; text-align: center; font-size: 2.5rem;}
-   h4{
-     font-size: 1rem;color: blue ; text-align: center;
-   }
-   .tango{
-      color:white; text-align: left;}
-   .home{
-     background-position: center; background-size:cover;}
-   .platos{
-    display: flex; flex-direction: column; 
-   }
-   .item{
-     font-size: 1.3rem; justify-items: center; color: yellow;}
-   .toro{
-     font-size: 1.3rem; justify-items: center;
-   }
-   .palma{
-     display: flex; flex-direction: column;
-     font-size: 1rem; justify-items: left; color: yellow;}
-     .donde{
-       font-size: 1.3rem; justify-items: center;
-     }
-     .registro{
-       background-position: center;background-size: auto;
-     }
-     .caja{
-       background-position: left;
-     }
-     .farru{
-       font-size: 1.2rem; color: white;
-     }
-     .contenedor-grid{
-       display: flex;flex-direction: column; font-size: 1rem;
-     }
-     .mesa{
-     font-size: 1.5rem;  text-align: left; margin-left: 1rem; color: darkblue; font-size: 0.2em;
-     }
-     .header__list{
-       font-size:  1rem; text-align: left;
-     }
-     h4{
-       font-size: 1.5rem; text-align: left;
-     }
-     .tratra{
-       display: flex; flex-direction: column;
-     }
-     .triana{
-       display: flex; flex-direction: column;
-     }
- }
+h1{color: red; text-align: center;}
+h2{ color: yellow; text-align: center; font-size: 2.5rem;}
+.tango{
+ color:white; text-align: left;}
+.home{
+background-position: center;background-size: auto;}
+.platos{
 
+  display: flex; flex-direction: column;
+}
+.item{
+  font-size: 1rem; justify-items: center; color: yellow;
+}
+.toro{
+font-size: 1.3rem; justify-items: center;
+}
+.palma{
+font-size: 1rem; justify-items: left; color: yellow;}
+.donde{
+  font-size: 1.3rem; justify-items: center;
+}
+.registro{
+  background-position: center;background-size: auto;
+}
+.caja{
+  background-position: left;
+}
+.farru{
+  font-size: 1.2rem; color: white;
+}
+.contenedor-grid{
+  display: flex; flex-direction: column; font-size: 0.5rem;
+}
+.mesa{
+  font-size: 0.5rem; text-align: center;
+}
+.header__list{
+  font-size:  1rem; text-align: left;
+}
+h4{
+  font-size: 1.5rem; text-align: center;
+}
+.tratra{
+  display: flex; flex-direction: column;
+}
+.contenedor{
+  display: flex; flex-direction: column; font-size: 0.5rem;
+}
+}
 
- 
 @media (min-width: 768px){
 
-h1{color: blue; text-align: center}
+h1{color: blue;text-align: center}
 h2{ color: blue;}
 .tango{
-  color: white; text-align: center;}
+color: white; text-align: center;}
 .home{
-  background-position: center;background-size: 110rem;}
+background-position: center;background-size: 110rem;}
 .header{
-  display: flex; text-align: center;}
+display: flex; text-align: center;}
 .item{
-  color: yellow;}
+color: yellow;}
 .registro{
-    background-position: center;background-size: 120rem;
-  }
+  background-position: center;background-size: 120rem;
+}
+.contenedor{
+  display: flex; flex-direction: column; font-size: 0.5rem;
+}
 .donde{
-    display: flex; text-align: center; font-size: 2rem;
-  }
-  .mesa{
-    font-size: 1rem; text-align: center; color: red;
-  }
-  
-  .header__list{
-    font-size:  1.5rem; text-align: center;display: flex;flex-direction: column;
-  }
-  
- }
+  display: flex; text-align: center; font-size: 2rem;
+}
+.mesa{
+  font-size: 1rem; text-align: center;
+}
+
+.header__list{
+  font-size:  1.5rem; text-align: center;display: flex;flex-direction: column;
+}
+.contenedor-grid{
+  display: flex; flex-direction:column; font-size: 1rem;
+}
+}
 
 @media(min-width: 1024px){
 
 h1{color: red;}
 h2{ color: yellow;}
 .tango{
-  color: white;}
+color: white;}
 .item{
-  font-size: 2rem;}
+font-size: 2rem;}
 .donde{
-    font-size: 2rem;
-  }
-  
-  .mesa{
-    font-size: 1.5rem; text-align: center; 
-  }
-  .header__list{
-    font-size: 2rem; text-align: center;
-  }
-  .contenedor-grid{ 
-    display: grid;
-    grid-template-columns: 350px 300px 350px 300px; gap: 1rem;
-    font-size: 1rem; color: white;}
+  font-size: 2rem;
 }
+.contenedor{
+  display: grid;
+grid-template-columns: 350px 300px 350px 300px; gap: 1rem;
 
-
-    
+}
+.mesa{
+  font-size: 1.5rem; text-align: center; 
+}
+.header__list{
+  font-size:  2rem; text-align: center;
+}
+.contenedor-grid{ 
+  display: grid;
+  grid-template-columns: 350px 300px 350px 300px; gap: 1rem;
+  font-size: 1rem; color: white;}
+}
