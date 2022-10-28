@@ -1,6 +1,6 @@
  *{ margin: 0;
     padding: 0; 
-    box-sizing: border-box;} 
+    } 
     
 
  h1{
@@ -42,8 +42,8 @@ grid-template-rows:  1fr auto auto 1fr;
 .carta{
  display:block;
  width: 60%;float:left;padding: 1rem 1rem ; box-sizing: border-box;}  
-.home{ background-image: url("../../img/wallpapiro.jpg"); background-size: cover;
- background-repeat: no-repeat; 
+.home{ background-image:url("../../img/wallpapiro.jpg") ; background-size: contain;
+ background-position: center;
 }   
 .toro{ 
   text-align: right;
@@ -57,9 +57,9 @@ grid-template-rows:  1fr auto auto 1fr;
 .header__list{
   margin-top: 0.2rem; color:black;display: block; font-size: 2rem;padding: 0.5rem;text-align: center; background-color: aquamarine;}
 .form-register{
-  display:inline-flex ;justify-content: space-between;align-items:center;
-  width: 14rem; padding:0.5rem;
-  margin-top:0.7rem;border-radius: 0,2rem;background: darkred; color:white;
+  display: inline-flex ;justify-content: space-between; align-items: center;
+  width: 14rem; padding: 0.2rem; box-sizing: border-box;
+  margin: 0.8rem; padding: 1rem; border-radius: 0.5rem; background: darkred; color:white;
   flex-direction:column; border-color: black;}
 .controls{
    width: 100%;background: 24303;padding: 0.4rem;
@@ -68,7 +68,7 @@ grid-template-rows:  1fr auto auto 1fr;
    font-size: 1.25rem;}
 .form-register .botons{
 width: 100%;padding: 0.2em;;background:blue;
- border:black;color:white;font-size: 1.5rem; }
+ border:black;color:white;font-size: 1rem; }
 .form-register a :hover{
 color: white; text-decoration: underline; }
 .form-register a{
@@ -128,57 +128,59 @@ font-family: Arial, Helvetica, sans-serif;font-size:1rem;}
 
  @media (max-width: 320px){
 
+   
+   h1{color:blue; text-align: center;}
+   h2{ color:blue; text-align: center; font-size: 2.5rem;}
+   h4{
+     font-size: 1rem;color: blue ; text-align: center;
+   }
+   .tango{
+      color:white; text-align: left;}
+   .home{
+     background-position: center; background-size:cover;}
+   .platos{
+    display: flex; flex-direction: column; 
+   }
+   .item{
+     font-size: 1.3rem; justify-items: center; color: yellow;}
+   .toro{
+     font-size: 1.3rem; justify-items: center;
+   }
+   .palma{
+     display: flex; flex-direction: column;
+     font-size: 1rem; justify-items: left; color: yellow;}
+     .donde{
+       font-size: 1.3rem; justify-items: center;
+     }
+     .registro{
+       background-position: center;background-size: auto;
+     }
+     .caja{
+       background-position: left;
+     }
+     .farru{
+       font-size: 1.2rem; color: white;
+     }
+     .contenedor-grid{
+       display: flex;flex-direction: column; font-size: 1rem;
+     }
+     .mesa{
+     font-size: 1.5rem;  text-align: left; margin-left: 1rem; color: darkblue; font-size: 0.2em;
+     }
+     .header__list{
+       font-size:  1rem; text-align: left;
+     }
+     h4{
+       font-size: 1.5rem; text-align: left;
+     }
+     .tratra{
+       display: flex; flex-direction: column;
+     }
+     .triana{
+       display: flex; flex-direction: column;
+     }
+ }
 
-h1{color: red; text-align: center;}
-h2{ color: yellow; text-align: center; font-size: 2.5rem;}
-h4{
-  font-size: 2rem; color: blue; text-align: center;
-}
-.tango{
-   color:white; text-align: left;}
-.home{
-  background-position: center; background-size: auto;}
-.platos{
- display: flex; flex-direction: column; 
-}
-.item{
-  font-size: 1.3rem; justify-items: center; color: yellow;}
-.toro{
-  font-size: 1.3rem; justify-items: center;
-}
-.palma{
-  display: flex; flex-direction: column;
-  font-size: 1rem; justify-items: left; color: yellow;}
-  .donde{
-    font-size: 1.3rem; justify-items: center;
-  }
-  .registro{
-    background-position: center;background-size: auto;
-  }
-  .caja{
-    background-position: left;
-  }
-  .farru{
-    font-size: 1.2rem; color: white;
-  }
-  .contenedor-grid{
-    display: flex;flex-direction: column; font-size: 1rem;
-  }
-  .mesa{
-  font-size: 1.5rem;  text-align: left; margin-left: 1rem; color: darkblue; font-size: 0.2em;
-  }
-  .header__list{
-    font-size:  1rem; text-align: left;
-  }
-  h4{
-    font-size: 1.5rem; text-align: left;
-  }
-  .tratra{
-    display: flex; flex-direction: column;
-  }
-  .triana{
-    display: flex; flex-direction: column;
-  }
 
  
 @media (min-width: 768px){
