@@ -1,6 +1,6 @@
- #{ margin: 0;
+ *{ margin: 0;
     padding: 0; 
-box-sizing: border-box;} 
+    box-sizing: border-box;} 
     
 
  h1{
@@ -15,7 +15,7 @@ h4{
 } h5{font-size: 2rem;color: gray;}
  h6{
 background-position:center; color:darkred;font-size: 4rem;
-font-family: "alex brush"; }
+font-family: "alex brush";}
 
 /*areasindex*/
 
@@ -80,7 +80,7 @@ color: white; text-decoration: underline; }
 .service{
     background-color:black; padding: 14px 20px;}
 .mesa{ 
-    font-size: 2rem; color: darkslategray;}
+    font-size: 1rem; color: darkslategray; margin-left: 3rem;}
 .caja{ width: 200px; height: 100px; background: red;
     display:flex;margin: auto; text-align: center; background-position: right;
 font-family: Arial, Helvetica, sans-serif;font-size:1rem;}
@@ -93,9 +93,9 @@ font-family: Arial, Helvetica, sans-serif;font-size:1rem;}
 .item{ 
   color: yellow; font-size: 1.5rem;}
  .contenedor-grid{ 
-  display: grid;
-  grid-template-columns: 450px 450px; gap: 1rem;
-  font-size: 2rem; color: white;}
+  display: grid; grid-template-columns: 300px 300px 400px 300px;
+  gap: 1rem;
+}
 .contenedor{
   display: grid;
   grid-template-columns: 350px 350px 330px 380px;gap: 2.5rem; }
@@ -111,9 +111,10 @@ font-family: Arial, Helvetica, sans-serif;font-size:1rem;}
   display: flex;justify-content: center; }
 .zapra{
   background-color: black;}
-  .tratra{
-    display: flex;justify-content: center;
+  .triana{
+    font-size: 1rem; color: white;
   }
+
 
 /*listas*/
     
@@ -130,19 +131,24 @@ font-family: Arial, Helvetica, sans-serif;font-size:1rem;}
 
 h1{color: red; text-align: center;}
 h2{ color: yellow; text-align: center; font-size: 2.5rem;}
+h4{
+  font-size: 2rem; color: blue; text-align: center;
+}
 .tango{
    color:white; text-align: left;}
 .home{
-  background-position: center;background-size: auto;}
+  background-position: center; background-size: auto;}
 .platos{
-  display: table-row;}
+ display: flex; flex-direction: column; 
+}
 .item{
   font-size: 1.3rem; justify-items: center; color: yellow;}
 .toro{
   font-size: 1.3rem; justify-items: center;
 }
 .palma{
-  font-size: 1rem; justify-items: center; color: yellow;}
+  display: flex; flex-direction: column;
+  font-size: 1rem; justify-items: left; color: yellow;}
   .donde{
     font-size: 1.3rem; justify-items: center;
   }
@@ -156,24 +162,28 @@ h2{ color: yellow; text-align: center; font-size: 2.5rem;}
     font-size: 1.2rem; color: white;
   }
   .contenedor-grid{
-    grid-template-columns: 1fr ;font-size: 1rem;
+    display: flex;flex-direction: column; font-size: 1rem;
   }
   .mesa{
-    font-size: 1rem; text-align: left;
+  font-size: 1.5rem;  text-align: left; margin-left: 1rem; color: darkblue; font-size: 0.2em;
   }
   .header__list{
     font-size:  1rem; text-align: left;
   }
   h4{
-    font-size: 1.5rem; text-align: center;
+    font-size: 1.5rem; text-align: left;
   }
-  
-}
+  .tratra{
+    display: flex; flex-direction: column;
+  }
+  .triana{
+    display: flex; flex-direction: column;
+  }
 
  
 @media (min-width: 768px){
 
-h1{color: blue;text-align: center}
+h1{color: blue; text-align: center}
 h2{ color: blue;}
 .tango{
   color: white; text-align: center;}
@@ -190,12 +200,13 @@ h2{ color: blue;}
     display: flex; text-align: center; font-size: 2rem;
   }
   .mesa{
-    font-size: 1rem;
+    font-size: 1rem; text-align: center; color: red;
   }
   
   .header__list{
-    font-size:  1.5rem; text-align: center;
+    font-size:  1.5rem; text-align: center;display: flex;flex-direction: column;
   }
+  
  }
 
 @media(min-width: 1024px){
@@ -211,12 +222,15 @@ h2{ color: yellow;}
   }
   
   .mesa{
-    font-size: 1rem; text-align: center; 
+    font-size: 1.5rem; text-align: center; 
   }
   .header__list{
-    font-size:  2rem; text-align: center;
+    font-size: 2rem; text-align: center;
   }
-  
+  .contenedor-grid{ 
+    display: grid;
+    grid-template-columns: 350px 300px 350px 300px; gap: 1rem;
+    font-size: 1rem; color: white;}
 }
 
 
