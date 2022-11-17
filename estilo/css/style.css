@@ -1,6 +1,7 @@
 *{
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 h1{
     text-align: right; margin-right: 100px;
@@ -185,6 +186,7 @@ h1{
       font-size: 1.5rem; text-align: center;
     }
     .tratra{
+      object-fit: contain;
       display: flex; flex-direction: column;padding: 1rem;
     }
     .contenedor{
@@ -260,4 +262,3 @@ h1{
       grid-template-columns: 350px 300px 350px 300px; gap: 1rem;
       font-size: 1rem; color: white;}
     }
-  
